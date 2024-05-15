@@ -35,6 +35,9 @@ Author: ERRAMIX
   /* border radius */
   --border-radius: 5px;
 
+  /* card bg  */
+  --card-bg:#fff;
+
 }
 
 
@@ -45,7 +48,7 @@ Author: ERRAMIX
 }
 
 body {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
   color: var(--primaryColor);
   background-color: var(--bodyColor);
   text-align: left;
@@ -82,6 +85,9 @@ body.dark-mode {
   /* title 2 Color (subtitle-color) */
   --title-2-color: #ebebeb;
 
+  /* card bg  */
+  --card-bg:#1E1E1E;
+
 }
 
 /* ========== end dark-mode colors ============ */
@@ -115,15 +121,16 @@ html {
 
 .title {
   color: var(--primaryColor);
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bold;
+  line-height: 54px;
   position: relative;
   text-transform: capitalize;
 }
 
 .title-2 {
   color: var(--title-2-color);
-  font-size: 26px;
+  font-size: 22px;
   font-weight: bold;
   position: relative;
   text-transform: capitalize;
@@ -192,6 +199,16 @@ a:focus {
   transform-origin: left;
   color: #F3F3F3;
   border-radius: var(--border-radius);
+}
+.box p {
+  color: #000;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+  padding-top: 4px;
 }
 
 .box.box-hover:hover:before,
@@ -280,7 +297,7 @@ a:focus {
 .learn-more {
   text-transform: capitalize;
   color: var(--brand-color);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   cursor: pointer;
   border: none;
@@ -304,7 +321,7 @@ a:focus {
     font-size: 35px;
   }
   .title-2 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .pretitle {
     font-size: 14px;
@@ -316,15 +333,15 @@ a:focus {
 }
 @media (max-width:576px){
   .title {
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 22px;
+    line-height: 34px;
   }
 }
 
 p {
   color: var(--secendaryColor);
-  font-size: 16px;
-  line-height: 32px;
+  font-size: 15px;
+  line-height: 28px;
   font-weight: 400;
 }
 
@@ -1798,7 +1815,7 @@ body.dark-mode .nav-offcanvas .offcanvas-title img {
 .toast {
   border-radius: var(--border-radius) !important;
   color: #F9F9F9;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
   box-shadow: none !important;
 }
 @media (max-width:767px){
@@ -2099,7 +2116,7 @@ body.dark-mode .nav-offcanvas .offcanvas-title img {
 /*============== start fee page ==========*/
 
 .fees .card {
-  background-color: var(--boxColor);
+  background-color: var(--card-bg);
   border-radius: 14px;
   box-shadow: 0px 10px 60px 0px #262D7614;
   padding-bottom: 7px;
