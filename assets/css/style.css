@@ -201,7 +201,7 @@ a:focus {
   border-radius: var(--border-radius);
 }
 .box p {
-  color: #000;
+  color: var(--secendaryColor);
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
@@ -483,13 +483,13 @@ svg {
 .footer .logo-two {
   display: none;
 }
-body.dark-mode .navbar .logo-one,
-body.dark-mode .footer .logo-one{
+/* body.dark-mode .navbar .logo-one, */
+/* body.dark-mode .footer .logo-one{
   display: none;
-}
-body.dark-mode .navbar .logo-two,
-body.dark-mode .footer .logo-two{
-  display: block;
+} */
+body.dark-mode .navbar .logo-one,
+body.dark-mode .footer .logo-one {
+  filter: brightness(100);
 }
 
 @media (max-width:991px){
@@ -1738,6 +1738,12 @@ body.dark-mode .nav-offcanvas .offcanvas-title img {
   border-radius: var(--border-radius);
   transition: 0.3s;
 }
+@media (max-width:767px){
+  .blog .title-2 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
 
 /* =========== start blog single page ============ */
 
@@ -1761,6 +1767,12 @@ body.dark-mode .nav-offcanvas .offcanvas-title img {
 
 .rotate-icon.rotated {
   transform: rotate(180deg);
+}
+
+@media (max-width:767px){
+  .faq .box h4 {
+    font-size: 16px;
+  }
 }
 
 /*============== End FAQ section ==========*/
@@ -1792,9 +1804,12 @@ body.dark-mode .nav-offcanvas .offcanvas-title img {
 
 .contact .info h5 {
   color: var(--secendaryColor);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
+  display: flex;
+  align-items: center;
 }
+
 
 .contact-map {
   width: 100%;
@@ -1822,6 +1837,13 @@ body.dark-mode .nav-offcanvas .offcanvas-title img {
   .contact-map {
     height: 280px;
     margin-top: 4rem;
+  }
+  .contact .info h5 {
+    font-size: 17px;
+  }
+  .contact .info h5 i {
+    margin-right: 12px !important;
+    font-size: 25px;
   }
 }
 
@@ -1955,6 +1977,9 @@ body.dark-mode .nav-offcanvas .offcanvas-title img {
 	display: inline-block;
 	margin-bottom: 25px;
   height: 70px ;
+}
+.footer-area .footer-logo img {
+  filter: brightness(100);
 }
 
 .footer-heading h3 {
@@ -2107,6 +2132,9 @@ body.dark-mode .nav-offcanvas .offcanvas-title img {
   }
   .footer-area .single-footer-widget {
     margin-top: 10px;
+  }
+  .footer-area {
+    padding-block: 50px ;
   }
 }
 
