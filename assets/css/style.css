@@ -30,7 +30,7 @@ Author: ERRAMIX
   --title-2-color: #292836;
 
   /* Secondary Text Color */
-  --secendaryColor: #5E5E5E;
+  --secendaryColor: #383838;
 
   /* border radius */
   --border-radius: 5px;
@@ -361,10 +361,13 @@ img {
   margin-top: 82px;
   color: var(--bodyColor);
 }
+.breadcrumbs p {
+  margin-bottom: 0;
+}
 
 @media (max-width: 992px) {
   .breadcrumbs {
-    margin-top: 57px;
+    margin-top: 65px;
   }
 }
 
@@ -556,6 +559,14 @@ body.dark-mode .nav-offcanvas .btn-close {
 }
 body.dark-mode .nav-offcanvas .offcanvas-title img {
   filter: brightness(100);
+}
+@media (max-width:767px){
+  .navbar .logo {
+    width: 11rem;
+  }
+  .navbar .navbar-brand {
+    padding: 0;
+  }
 }
 /*================== End navbar section ==================*/
 
@@ -2308,3 +2319,41 @@ body.dark-mode .nav-offcanvas .offcanvas-title img {
 }
 
 /* ================= end login page + register page  ===================== */
+
+
+
+
+/* faq section start  */
+.faq-section .accordion {
+  gap: 8px;
+}
+.faq-section .accordion-button {
+  gap: 10px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.faq-section .accordion-button .faq-count {
+  height: 43px;
+  min-width: 43px;
+  max-width: 43px;
+  border:1px dashed var(--brand-color);
+}
+.faq-section .accordion-button::after {
+  display: none;
+}
+.faq-section .accordion-button:not(.collapsed) {
+  background-color: rgba(197, 197, 197, 0.234);
+  color: var(--brand-color);
+}
+.faq-section .accordion-button,
+.faq-section .accordion-body {
+  padding: 12px;
+}
+.faq-section .accordion-item {
+  border-radius: 8px;
+}
+.faq-section .accordion-body p {
+  color: var(--black);
+  margin-bottom: 0;
+}
+/* faq section end */
