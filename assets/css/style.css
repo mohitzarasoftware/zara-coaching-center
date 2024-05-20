@@ -806,7 +806,6 @@ body.dark-mode .nav-offcanvas .offcanvas-title img {
 
 /*============== Start single-service section ==========*/
 .single-service {
-  min-height: 100vh;
   margin-top: 6rem;
 }
 
@@ -2357,3 +2356,40 @@ body.dark-mode .nav-offcanvas .offcanvas-title img {
   margin-bottom: 0;
 }
 /* faq section end */
+
+
+/* course detail section start */
+.course-detail-section {}
+.course-detail-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.course-detail-card p {
+  color: #000;
+}
+.course-detail-card h3 {
+  font-size: 21px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.course-detail-card ul {
+  list-style: disc;
+  padding-left: 22px;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.course-detail-card li {
+  font-size: 15px;
+  color: #000;
+}
+.course-detail-card .medule-list .medule-data {
+  font-size: 17px;
+  font-weight: 600;
+}
+.course-detail-card .medule-list li span {
+  color: var(--brand-color);
+}
+/* course detail section end */
